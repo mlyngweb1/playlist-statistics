@@ -1,26 +1,26 @@
 {
   "playlistCollection": [
     {
-      "id" : "01",
+      "id": "01",
       "title": "Beethoven Sonatas",
       "duration": 35,
       "songs": [
         {
-          "id" : "01",
+          "id": "01",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 5
         },
         {
-          "id" : "05",
+          "id": "05",
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 6
         },
         {
-          "id" : "06",
+          "id": "06",
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven",
           "genre": "Classical",
@@ -29,26 +29,26 @@
       ]
     },
     {
-      "id" : "02",
+      "id": "02",
       "title": "Beethoven Concertos",
       "duration": 23,
       "songs": [
         {
-          "id" : "01",
+          "id": "01",
           "title": "Piano Concerto No. 0",
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 8
         },
         {
-          "id" : "08",
+          "id": "08",
           "title": "Piano Concerto No. 4",
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 3
         },
         {
-          "id" : "09",
+          "id": "09",
           "title": "Piano Concerto No. 6",
           "artist": "Beethoven",
           "genre": "Classical",
@@ -57,23 +57,34 @@
       ]
     },
     {
-      "id" : "03",
+      "id": "03",
       "title": "Beethoven Variations",
       "duration": 67,
       "songs": [
         {
-          "id" : "10",
+          "id": "10",
           "title": "Opus 34: Six variations on a theme in F major",
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 11
         },
         {
-          "id" : "11",
+          "id": "11",
           "title": "Opus 120: Thirty-three variations on a waltz by Diabelli in C majo",
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 45
+        }
+      ]
+    },
+    {
+      "id": "039d092a-aa49-4134-9eb2-5311a673810f",
+      "title": "Beethoven Symphonies",
+      "songs": [
+        {
+          "id": "43d495f6-5da9-42f3-8509-3f80eda25327",
+          "title": "Symphony No 1",
+          "artist": "Beethoven"
         }
       ]
     }

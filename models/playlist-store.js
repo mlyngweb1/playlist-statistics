@@ -1,32 +1,44 @@
 'use strict';
 
 const _ = require('lodash');
+const JsonStore = require('./json-store');
 
 const playlistStore = {
 
-  playlistCollection: require('./playlist-store.json').playlistCollection,
+  store: new JsonStore('./models/playlist-store.json', { playlistCollection: [] }),
+  collection: 'playlistCollection',
 
   getAllPlaylists() {
-    return this.playlistCollection;
+    return this.store.findAll(this.collection);
   },
 
   getPlaylist(id) {
-    return _.find(this.playlistCollection, { id: id });
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+
+  addPlaylist(playlist) {
+    this.store.add(this.collection, playlist);
+  },
+
+  removePlaylist(id) {
+    const playlist = this.getPlaylist(id);
+    this.store.remove(this.collection, playlist);
+  },
+
+  removeAllPlaylists() {
+    this.store.removeAll(this.collection);
+  },
+
+  addSong(id, song) {
+    const playlist = this.getPlaylist(id);
+    playlist.songs.push(song);
   },
 
   removeSong(id, songId) {
     const playlist = this.getPlaylist(id);
-    _.remove(playlist.songs, { id: songId });
+    const songs = playlist.songs;
+    _.remove(songs, { id: songId});
   },
-  
-  removePlaylist(id) {
-  _.remove(this.playlistCollection, { id: id });
-},
-    addSong(id, song) {
-    const playlist = this.getPlaylist(id);
-    playlist.songs.push(song);
-  },
-  
 };
 
 module.exports = playlistStore;

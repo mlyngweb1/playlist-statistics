@@ -29,6 +29,7 @@ const playlist = {
     const playlistId = request.params.id;
     const playlist = playlistStore.getPlaylist(playlistId);
     const newSong = {
+      id: uuid(),
       title: request.body.title,
       artist: request.body.artist,
     };
