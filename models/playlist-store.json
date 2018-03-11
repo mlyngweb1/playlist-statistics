@@ -74,17 +74,11 @@
           "artist": "Beethoven",
           "genre": "Classical",
           "duration": 45
-        }
-      ]
-    },
-    {
-      "id": "039d092a-aa49-4134-9eb2-5311a673810f",
-      "title": "Beethoven Symphonies",
-      "songs": [
+        },
         {
-          "id": "43d495f6-5da9-42f3-8509-3f80eda25327",
-          "title": "Symphony No 1",
-          "artist": "Beethoven"
+          "id": "b9ae7209-9286-4621-ba08-46c98e558fd5",
+          "title": "test",
+          "artist": "tester"
         }
       ]
     }
