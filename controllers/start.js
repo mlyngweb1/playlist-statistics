@@ -9,7 +9,7 @@ const start = {
     
     const playCollections = playlistStore.getAllPlaylists();
     let totalsongs = 0;
-    for (let i = 0; i < playCollections.length; i++) {
+    for (let i in playCollections) {
      totalsongs = totalsongs + playCollections[i].songs.length;
     }
 

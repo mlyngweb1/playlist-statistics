@@ -97,6 +97,17 @@
           "artist": "Beethoven"
         }
       ]
+    },
+    {
+      "id": "236615ba-ea17-46c1-bd11-a876eace3b0e",
+      "title": "Beethoven Mixes",
+      "songs": [
+        {
+          "id": "1eda6a77-40bc-43af-87e9-5568e61190ad",
+          "title": "Mix No 9",
+          "artist": "Beethoven"
+        }
+      ]
     }
   ]
 }
